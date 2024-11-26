@@ -26,6 +26,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         firstScreen.tabBarItem.title = "First"
         secondScreen.tabBarItem.title = "Second"
         thirdScreen.tabBarItem.title = "Third"
+        
+        firstScreen.tabBarItem.accessibilityIdentifier = "First"
+        secondScreen.tabBarItem.accessibilityIdentifier = "Second"
+        thirdScreen.tabBarItem.accessibilityIdentifier = "Third"
+        
         tabBarController.viewControllers = [firstScreen, secondScreen, thirdScreen ]
         tabBarController.tabBar.backgroundColor = .white
                 window.rootViewController = tabBarController

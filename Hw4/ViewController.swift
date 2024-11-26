@@ -1,15 +1,25 @@
 import UIKit
 import Combine
 class ViewController: UIViewController {
-let card = Card()
+    let card: Card = {
+        let card = Card()
+        card.accessibilityIdentifier = "card"
+        return card
+    }()
+
     let catFetcher = CatAPIService()
-    let spinner = Spinner()
+    let spinner: Spinner = {
+        let spinner = Spinner()
+        spinner.accessibilityIdentifier = "spinner" 
+        return spinner
+    }()
     var cancellable = Set<AnyCancellable>()
     let buttonLike: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "heart.circle", withConfiguration:
                                     UIImage.SymbolConfiguration(pointSize: 40, weight: .bold)), for: .normal)
         button.tintColor = .systemGreen
+        button.accessibilityIdentifier = "buttonLike"
         return button
     }()
     let buttonDislike: UIButton = {
@@ -17,6 +27,7 @@ let card = Card()
         button.setImage(UIImage(systemName: "xmark.circle", withConfiguration:
                                     UIImage.SymbolConfiguration(pointSize: 40, weight: .bold)), for: .normal)
         button.tintColor = .systemRed
+        button.accessibilityIdentifier = "buttonDislike"
         return button
     }()
     override func viewDidLoad() {

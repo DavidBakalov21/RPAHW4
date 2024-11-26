@@ -18,6 +18,8 @@
 		A515C7452CDB9C7F006DA82C /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515C7442CDB9C7F006DA82C /* card.swift */; };
 		A515C74B2CDBA54E006DA82C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A515C74A2CDBA54E006DA82C /* SnapKit */; };
 		A515D8C72CDC1AE3008AD4B9 /* spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515D8C62CDC1AE3008AD4B9 /* spinner.swift */; };
+		A55EF8BC2CEF554000864D95 /* SecondScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55EF8BB2CEF552000864D95 /* SecondScreenTest.swift */; };
+		A55EF8BE2CEF64B300864D95 /* ThirdScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55EF8BD2CEF64A700864D95 /* ThirdScreenTest.swift */; };
 		A5ED609E2CDCDBD4000EF8AF /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED609D2CDCDBD4000EF8AF /* model.swift */; };
 		A5ED60A02CDCDBEF000EF8AF /* CatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED609F2CDCDBEF000EF8AF /* CatAPIService.swift */; };
 		A5ED60A62CDE0CDF000EF8AF /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED60A52CDE0CDF000EF8AF /* SecondScreen.swift */; };
@@ -59,6 +61,8 @@
 		A515C72E2CDB8A26006DA82C /* Hw4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hw4UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A515C7442CDB9C7F006DA82C /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		A515D8C62CDC1AE3008AD4B9 /* spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spinner.swift; sourceTree = "<group>"; };
+		A55EF8BB2CEF552000864D95 /* SecondScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenTest.swift; sourceTree = "<group>"; };
+		A55EF8BD2CEF64A700864D95 /* ThirdScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenTest.swift; sourceTree = "<group>"; };
 		A5ED609D2CDCDBD4000EF8AF /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		A5ED609F2CDCDBEF000EF8AF /* CatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIService.swift; sourceTree = "<group>"; };
 		A5ED60A52CDE0CDF000EF8AF /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		A515C72B2CDB8A26006DA82C /* Hw4UITests */ = {
 			isa = PBXGroup;
 			children = (
+				A55EF8BD2CEF64A700864D95 /* ThirdScreenTest.swift */,
+				A55EF8BB2CEF552000864D95 /* SecondScreenTest.swift */,
 				A515C72C2CDB8A26006DA82C /* Hw4UITests.swift */,
 				A515C72E2CDB8A26006DA82C /* Hw4UITestsLaunchTests.swift */,
 			);
@@ -336,6 +342,8 @@
 			files = (
 				A515C72F2CDB8A26006DA82C /* Hw4UITestsLaunchTests.swift in Sources */,
 				A515C72D2CDB8A26006DA82C /* Hw4UITests.swift in Sources */,
+				A55EF8BC2CEF554000864D95 /* SecondScreenTest.swift in Sources */,
+				A55EF8BE2CEF64B300864D95 /* ThirdScreenTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

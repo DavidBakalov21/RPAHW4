@@ -21,10 +21,13 @@ final class ThirdScreen: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        tableView.accessibilityIdentifier = "catsImages"
+        titleText.accessibilityIdentifier = "likedLabel"
         titleText.text = "Liked Cats"
         tableView.delegate = self
                tableView.dataSource = self
                titleText.font = titleText.font.withSize(30)
+        
         view.addSubview(titleText)
         view.addSubview(tableView)
                titleText.snp.makeConstraints {

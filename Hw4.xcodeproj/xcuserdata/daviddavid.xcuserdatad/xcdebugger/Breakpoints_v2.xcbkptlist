@@ -14,8 +14,8 @@
             filePath = "Hw4/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -50,36 +50,6 @@
             endingLineNumber = "53"
             landmarkName = "fetchCatsForBreeds()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AF1B595E-A738-4DEF-905A-EFB32EEB77BB - ccdf01c1116772cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in Hw4.CatBreedFetcher.fetchCatsForBreeds() -&gt; ()"
-                  moduleName = "Hw4"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/daviddavid/Documents/Hw4/Hw4/fetch/CatBreedFetchr.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53">
-               </Location>
-               <Location
-                  uuid = "AF1B595E-A738-4DEF-905A-EFB32EEB77BB - ccdf01c1116772cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in Hw4.CatBreedFetcher.fetchCatsForBreeds() -&gt; ()"
-                  moduleName = "Hw4"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/daviddavid/Documents/Hw4/Hw4/fetch/CatBreedFetchr.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,6 +66,22 @@
             endingLineNumber = "41"
             landmarkName = "fetchCatsForBreeds()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BACAF09F-AC8C-4972-B059-9F883507805C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hw4UITests/SecondScreenTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "SecondScreenTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -12,7 +12,7 @@ import SnapKit
 final class BreedCell: UITableViewCell {
     let nameLabel: UILabel = {
         let label = UILabel()
-        
+        label.accessibilityIdentifier = "nameLabel"
         return label
     }()
     // https://stackoverflow.com/questions/41475501/creating-a-shadow-for-a-uiimageview-that-has-rounded-corners

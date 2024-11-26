@@ -22,6 +22,8 @@ class SecondScreen: UIViewController {
         
         view.backgroundColor = .white
         titleText.text = "Cats"
+        tableView.accessibilityIdentifier = "breedsCats"
+        titleText.accessibilityIdentifier = "catsLabel"
         tableView.delegate = self
                tableView.dataSource = self
                titleText.font = titleText.font.withSize(30)

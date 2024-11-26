@@ -6,36 +6,39 @@
 //
 
 import XCTest
+//https://swiftwithmajid.com/2021/03/18/ui-testing-in-swift-with-xctest-framework/
+//https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests
+//https://stackoverflow.com/questions/34274341/how-can-i-test-for-the-existence-of-a-uiview-using-xcuielementsquery
+final class MainScreenTests: XCTestCase {
+    var app: XCUIApplication!
 
-final class Hw4UITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+       override func setUp() {
+           continueAfterFailure = false
+           app = XCUIApplication()
+           app.launchArguments = ["testing"]
+           app.launch()
+       }
+    func testCheckCard() {
+            XCTAssertTrue(app.otherElements["card"].exists, "card should be present")
+            
+       }
+    func testCheckButtonLike() {
+        XCTAssertTrue(app.buttons["buttonLike"].exists, "button like is missing")
+            
+       }
+    
+    func testCheckButtonDisLike() {
+        XCTAssertTrue(app.buttons["buttonDislike"].exists, "button dislike is missing")
+       }
+  
+    func testCheckIfButtonLikeClickable() {
+            XCTAssertTrue(app.buttons["buttonLike"].isHittable, "button like isn't clickable")
+       }
+    func testCheckIfButtonDisLikeClickable() {
+            XCTAssertTrue(app.buttons["buttonDislike"].isHittable, "button dislike isn't clickable")
+       }
+    override func tearDown() {
+        app = nil
+        super.tearDown()
     }
 }
