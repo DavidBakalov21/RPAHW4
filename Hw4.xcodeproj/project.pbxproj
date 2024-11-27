@@ -228,6 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A5C735522CF7083500BA3BED /* PBXTargetDependency */,
 				A515C72A2CDB8A26006DA82C /* PBXTargetDependency */,
 			);
 			name = Hw4UITests;
@@ -243,7 +244,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					A515C7072CDB8A25006DA82C = {
 						CreatedOnToolsVersion = 15.4;
@@ -363,6 +364,10 @@
 		A515C7422CDB93E2006DA82C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = A515C7412CDB93E2006DA82C /* SwiftLintBuildToolPlugin */;
+		};
+		A5C735522CF7083500BA3BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A5C735512CF7083500BA3BED /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,7 +559,6 @@
 		A515C7362CDB8A26006DA82C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -574,7 +578,6 @@
 		A515C7372CDB8A26006DA82C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -594,7 +597,6 @@
 		A515C7392CDB8A26006DA82C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7754ZF4T74;
@@ -612,7 +614,6 @@
 		A515C73A2CDB8A26006DA82C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7754ZF4T74;
@@ -697,6 +698,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A515C7492CDBA54E006DA82C /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A5C735512CF7083500BA3BED /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A515C73B2CDB9135006DA82C /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

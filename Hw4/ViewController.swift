@@ -3,14 +3,14 @@ import Combine
 class ViewController: UIViewController {
     let card: Card = {
         let card = Card()
-        card.accessibilityIdentifier = "card"
+        card.accessibilityIdentifier = "Card"
         return card
     }()
 
     let catFetcher = CatAPIService()
     let spinner: Spinner = {
         let spinner = Spinner()
-        spinner.accessibilityIdentifier = "spinner" 
+        spinner.accessibilityIdentifier = "Spinner" 
         return spinner
     }()
     var cancellable = Set<AnyCancellable>()

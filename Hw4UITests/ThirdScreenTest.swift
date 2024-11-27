@@ -11,9 +11,9 @@ final class ThirdScreenTests: XCTestCase {
     var app: XCUIApplication!
 
        override func setUp() {
+           super.setUp()
            continueAfterFailure = false
            app = XCUIApplication()
-           app.launchArguments = ["testing"]
            app.launch()
        }
     func testLabelAtTheSecondScreen() {
@@ -31,9 +31,9 @@ final class ThirdScreenTests: XCTestCase {
             
        }
     func testTableCheckLiked() {
-        let Card = app.otherElements["card"]
+        let card = app.otherElements["Card"]
     
-        Card.swipeLeft()
+        card.swipeLeft()
         let secondTab = app.tabBars.buttons["Third"]
         secondTab.tap()
 
@@ -43,9 +43,9 @@ final class ThirdScreenTests: XCTestCase {
     }
     
     func testTableCheckLiked2() {
-        let Card = app.otherElements["card"]
+        let card = app.otherElements["Card"]
     
-        Card.swipeRight()
+        card.swipeRight()
         let secondTab = app.tabBars.buttons["Third"]
         secondTab.tap()
 

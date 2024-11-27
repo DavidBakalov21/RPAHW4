@@ -13,18 +13,21 @@
 //
 
 import XCTest
-//https://medium.com/@sovata8/xcode-ui-testing-button-interactions-exploring-tap-exists-and-waiting-with-predicates-1e344b3c2e60
-// https://stackoverflow.com/questions/32365327/how-can-i-verify-existence-of-text-inside-a-table-view-row-given-its-index-in-an
-// https://medium.com/appledeveloperacademy-ufpe/how-to-implement-ui-tests-with-swiftui-a-few-examples-636708ee26ad
+// https://medium.com/@sovata8/xcode-ui-testing-button-interactions
+// -exploring-tap-exists-and-waiting-with-predicates-1e344b3c2e60
+// https://stackoverflow.com/questions/32365327/how-can-i-verify-existence
+// -of-text-inside-a-table-view-row-given-its-index-in-an
+// https://medium.com/appledeveloperacademy-ufpe/how-to-
+// implement-ui-tests-with-swiftui-a-few-examples-636708ee26ad
 // https://swiftwithmajid.com/2021/03/18/ui-testing-in-swift-with-xctest-framework/
 // https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests
 final class SecondScreenTests: XCTestCase {
     var app: XCUIApplication!
 
        override func setUp() {
+           super.setUp()
            continueAfterFailure = false
            app = XCUIApplication()
-           app.launchArguments = ["testing"]
            app.launch()
        }
     func testLabelAtTheSecondScreen() {
@@ -42,7 +45,7 @@ final class SecondScreenTests: XCTestCase {
     func testCheckSpinnerAtTheSeconsScreen() {
         let secondTab = app.tabBars.buttons["Second"]
             secondTab.tap()
-            XCTAssertFalse(app.otherElements["spinner"].exists, "spinner should not be present")
+            XCTAssertFalse(app.otherElements["Spinner"].exists, "spinner should not be present")
             
        }
 

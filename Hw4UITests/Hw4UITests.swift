@@ -6,20 +6,20 @@
 //
 
 import XCTest
-//https://swiftwithmajid.com/2021/03/18/ui-testing-in-swift-with-xctest-framework/
-//https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests
-//https://stackoverflow.com/questions/34274341/how-can-i-test-for-the-existence-of-a-uiview-using-xcuielementsquery
+// https://swiftwithmajid.com/2021/03/18/ui-testing-in-swift-with-xctest-framework/
+// https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests
+// https://stackoverflow.com/questions/34274341/how-can-i-test-for-the-existence-of-a-uiview-using-xcuielementsquery
 final class MainScreenTests: XCTestCase {
     var app: XCUIApplication!
 
        override func setUp() {
+           super.setUp()
            continueAfterFailure = false
            app = XCUIApplication()
-           app.launchArguments = ["testing"]
            app.launch()
        }
     func testCheckCard() {
-            XCTAssertTrue(app.otherElements["card"].exists, "card should be present")
+            XCTAssertTrue(app.otherElements["Card"].exists, "card should be present")
             
        }
     func testCheckButtonLike() {

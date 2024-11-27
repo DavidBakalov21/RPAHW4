@@ -10,6 +10,7 @@ import XCTest
 final class Hw4UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
+        // suggests to change class to static, but it's a trap(it won't run)
         true
     }
 
